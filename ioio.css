@@ -1,0 +1,156 @@
+*{
+  font-family: 'Edu SA Beginner', cursive;
+font-family: 'Oswald', sans-serif;
+}
+body {
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: rgb(0, 98, 155);
+    color: white;
+  }
+  
+  <!-- li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  } -->
+  ul img{
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .main{
+    margin-left: 16vw;
+  }
+  .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search h5{
+    background-color: rgb(0, 98, 155);
+    flex: 4;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 2vw;
+    border: none;
+    color: white;
+    text-align: center;
+  }
+  .input_holder{
+    flex: 9;
+
+  }
+  input{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 2px 2px  lightblue;
+    min-width: 100%;
+    max-width: 100%; 
+    
+  }
+  .icone_holder{
+    margin-left: 30px;
+    flex: 2;
+
+  }
+  .icone_holder i{
+    background: orange;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+ .card{
+  flex: 1;
+  margin: 1vw;
+  border-radius: 15px;
+  background: #F6F6F6;
+  box-shadow: 0 0 2px 2px lightblue;
+  max-height: 20vw;
+
+ }
+ .card img{
+max-width: 100%;
+min-width: 100%;
+max-height: 12vw;
+object-fit: contain;
+
+ }
+ .description {
+  margin-left:1vw !important;
+  color: gray;
+  margin: 0;
+  font-size: small;
+}
+.fa-star{
+  color: gold;
+}
+.purchase{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+
+}
+.purchase button{
+  background: rgb(0, 98, 155);
+  color: whitesmoke;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 1vw;
+  border: none;
+  cursor: pointer;
+
+}
+.body_card{
+  margin: 0;
+  margin-left: 1vw;
+  margin-right:1vw ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-height: fit-content;
+
+ }
+ @media screen and (max-width: 480px) {
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  .card{
+    max-height: fit-content;
+  }
+  .card img{
+    min-height: 50vw;
+  }
+  .navbar{
+    display: none;
+  }
+}
+
+ 
